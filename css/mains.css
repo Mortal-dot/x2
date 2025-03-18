@@ -60,7 +60,7 @@
   .imagenes img {
     width: 100%; /* Las imágenes ocupan el 100% del espacio de su contenedor */
     height: auto; /* Mantener la relación de aspecto */
-    max-height: 400px; /* Limitar la altura máxima de las imágenes solo en móviles */
+    max-height: 600px; /* Limitar la altura máxima de las imágenes solo en móviles */
     object-fit: cover; /* Asegura que las imágenes cubran todo el espacio sin deformarse */
   }
 }
