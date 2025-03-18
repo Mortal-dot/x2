@@ -809,6 +809,13 @@ footer {
 
 
 
+@media screen and (max-width: 426px) {
+  /* Asegura que las imágenes estén alineadas en una sola fila */
+  .contentBox .content-image-grid {
+    display: grid;                /* Utiliza grid para organizar las imágenes */
+    grid-template-columns: repeat(3, 1fr);  /* Crea tres columnas de igual tamaño */
+  
+  }
 
 
 
