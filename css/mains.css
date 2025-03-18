@@ -35,8 +35,37 @@
     justify-items: stretch; } }
 
 /* --- ADAPTACION A OTRAS PANTALLAS --- */
-/* Pantallas con un ancho minimo de 427 px y un maximo de 1023 px */
-@media only screen and (min-width: 427px) and (max-width: 1023px) {
+
+/* Pantallas con un ancho minimo de 1024 px (pantallas grandes) */
+@media only screen and (min-width: 1024px) {
+  .imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 imágenes por fila */
+    gap: 20px; /* Espaciado entre las imágenes */
+  }
+  .imagenes img {
+    width: 100%; /* Las imágenes ocupan el 100% del espacio de su contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+    max-height: 400px; /* Limitar la altura máxima para evitar que se deformen */
+    object-fit: cover; /* Asegura que las imágenes cubran todo el espacio sin deformarse */
+  }
+}
+
+/* Para pantallas más pequeñas (como teléfonos) */
+@media only screen and (max-width: 1023px) {
+  .imagenes {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 imagen por fila */
+    gap: 10px; /* Menor espacio entre las imágenes */
+  }
+  .imagenes img {
+    width: 100%; /* Las imágenes ocupan el 100% del espacio de su contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+    max-height: 300px; /* Limitar la altura máxima de las imágenes en dispositivos móviles */
+    object-fit: cover; /* Asegura que las imágenes cubran todo el espacio sin deformarse */
+  }
+}
+
   /* --- IMPORT --- */
   /* --- ANIMACIONES --- */
   .text-grayscale {
