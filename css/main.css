@@ -821,7 +821,6 @@ footer {
     width: 100%;                       /* Las imágenes ocuparán todo el espacio de su columna */
     height: auto;                      /* Mantiene la proporción de las imágenes */
     object-fit: cover;                 /* Hace que las imágenes se ajusten sin perder su proporción */
-    aspect-ratio: 1.5;                 /* Controla la relación de aspecto (más alargado que cuadrado) */
   }
 }
 
