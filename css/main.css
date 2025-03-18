@@ -812,10 +812,19 @@ footer {
 @media screen and (max-width: 426px) {
   /* Asegura que las imágenes estén alineadas en una sola fila */
   .contentBox .content-image-grid {
-    display: grid;                /* Utiliza grid para organizar las imágenes */
+    display: grid;                     /* Utiliza grid para organizar las imágenes */
     grid-template-columns: repeat(3, 1fr);  /* Crea tres columnas de igual tamaño */
-  
+    gap: 10px;                         /* Espacio entre las imágenes */
   }
+
+  .contentBox .content-image-grid img {
+    width: 100%;                       /* Las imágenes ocuparán todo el espacio de su columna */
+    height: auto;                      /* Mantiene la proporción de las imágenes */
+    object-fit: cover;                 /* Hace que las imágenes se ajusten sin perder su proporción */
+    aspect-ratio: 1.5;                 /* Controla la relación de aspecto (más alargado que cuadrado) */
+  }
+}
+
 
 
 
