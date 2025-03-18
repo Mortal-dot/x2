@@ -87,33 +87,9 @@
       display: none; } }
 
 /* --- ADAPTACION A OTRAS PANTALLAS --- */
-
-/* Pantallas con un ancho minimo de 1024 px (pantallas grandes) */
+/* Pantallas con un ancho minimo de 1024 px */
 @media only screen and (min-width: 1024px) {
-  .imagenes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 imágenes por fila */
-    gap: 20px; /* Espaciado entre las imágenes */
-  }
-  .imagenes img {
-    width: 100%; /* Las imágenes ocupan el 100% del espacio de su contenedor */
-    height: auto; /* Mantener la relación de aspecto */
-  }
-}
-
-/* Para pantallas más pequeñas (como teléfonos) */
-@media only screen and (max-width: 1023px) {
-  .imagenes {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 imagen por fila */
-    gap: 10px; /* Menor espacio entre las imágenes */
-  }
-  .imagenes img {
-    width: 100%; /* Las imágenes ocupan el 100% del espacio de su contenedor */
-    height: auto; /* Mantener la relación de aspecto */
-  }
-}
-
+  /* --- IMPORT --- */
   /* --- ANIMACIONES --- */
   .text-grayscale {
     background-color: #cececeb5;
@@ -833,20 +809,21 @@ footer {
 
 
 
-@media screen and (max-width: 426px) {
-  /* Asegura que las imágenes estén alineadas en una sola fila */
-  .contentBox .content-image-grid {
-    display: grid;                     /* Utiliza grid para organizar las imágenes */
-    grid-template-columns: repeat(3, 1fr);  /* Crea tres columnas de igual tamaño */
-    gap: 10px;                         /* Espacio entre las imágenes */
-  }
 
-  .contentBox .content-image-grid img {
-    width: 100%;                       /* Las imágenes ocuparán todo el espacio de su columna */
-    height: auto;                      /* Mantiene la proporción de las imágenes */
-    object-fit: cover;                 /* Hace que las imágenes se ajusten sin perder su proporción */
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
